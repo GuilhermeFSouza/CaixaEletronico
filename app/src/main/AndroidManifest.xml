@@ -18,5 +18,4 @@
         <activity android:name=".SaldoActivity"></activity>
         <activity android:name=".MenuActivity"></activity>
     </application>
-
 </manifest>
