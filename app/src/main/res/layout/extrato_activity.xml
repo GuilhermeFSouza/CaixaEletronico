@@ -14,29 +14,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/dataInicial"
-        android:id="@+id/textViewDataInicial" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="date"
-        android:ems="10"
-        android:id="@+id/editTextDataInicial" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/dataFinal"
         android:id="@+id/textViewDataFinal" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="date"
-        android:ems="10"
-        android:id="@+id/editTextDataFinal" />
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:id="@+id/datePicker" />
 
     <Button
         style="?android:attr/buttonStyleSmall"

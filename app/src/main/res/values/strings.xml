@@ -8,7 +8,7 @@
     <string name="senha">Senha</string>
     <string name="btnProsseguir">Prosseguir</string>
     <string name="saldo">Saldo</string>
-    <string name="infoSaldo">"Confira seu saldo abaixo"</string>
+    <string name="infoSaldo">"Insira os dados da conta e valor para sacar abaixo:"</string>
     <string name="moedaReal">R$</string>
     <string name="periodo">Selecione o período</string>
     <string name="dataInicial">Data Inicial</string>
@@ -18,4 +18,5 @@
     <string name="infoMenu">Selecione uma das opções abaixo</string>
     <string name="extrato">Extrato</string>
     <string name="saque">Saque</string>
+    <string name="valor">Valor</string>
 </resources>

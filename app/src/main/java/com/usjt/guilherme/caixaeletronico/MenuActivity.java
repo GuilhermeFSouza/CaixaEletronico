@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import org.json.JSONObject;
-
 /**
  * Created by guilherme on 23/10/16.
  */
@@ -16,15 +14,6 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_menu);
-        
-        Button buttonSaldo = (Button) findViewById(R.id.buttonSaldo);
-        buttonSaldo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, SaldoActivity.class);
-                startActivity(intent);
-            }
-        });
 
         Button buttonExtrato = (Button) findViewById(R.id.buttonExtrato);
         buttonExtrato.setOnClickListener(new View.OnClickListener() {
@@ -39,8 +28,8 @@ public class MenuActivity extends AppCompatActivity {
         buttonSaque.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(MenuActivity.this, SaqueActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MenuActivity.this, SaqueActivity.class);
+                startActivity(intent);
             }
         });
     }
