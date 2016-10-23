@@ -13,14 +13,22 @@ public class ExtratoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[] lista = {"teste 1", "teste 2", "teste 3"};
+        String lista[] = new String[50];
         super.onCreate(savedInstanceState);
         setContentView(R.layout.extrato_activity);
         //ArrayAdapter
+        for(int i=0; i<50; i++){
+            lista[i] = "Item "+ i;
+        }
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, lista);
         ListView listView = (ListView) findViewById(R.id.listViewExtrato);
         listView.setAdapter(adapter);
+    }
+    public void geraLista(String lista[]){
+        for(int i=0; i<=50; i++){
+            lista[i] = "Item "+ i;
+        }
     }
 }
 
